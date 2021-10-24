@@ -10,8 +10,9 @@
     "posthtml-include": "^1.7.2"
   },
   "scripts": {
-    "start": "parcel src/index.html --open",
-    "build": "parcel build src/index.html"
+    "start": "parcel src/html/page/index.html --open",
+    "build": "parcel build src/html/page/index.html",
+    "clear": "npx remove-node-modules && rm yarn.lock"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }

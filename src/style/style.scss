@@ -1,6 +1,2 @@
-@use 'button';
-
-h1 {
-    color: hotpink;
-    font-family: cursive;
-}
+@use 'base';
+@use 'component';
