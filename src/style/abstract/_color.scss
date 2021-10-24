@@ -1,0 +1,9 @@
+/// Basic Colors
+$black: black;
+$white: white;
+$transparent: transparent;
+
+/// Iris Sunshine Oases colors
+$iso-blue:      hsl(220, 61%, 85%);
+$iso-yellow:    hsl(45, 100%, 50%);
+$ios-gradient:  linear-gradient(45deg, $iso-blue 0%, $iso-yellow 90%);

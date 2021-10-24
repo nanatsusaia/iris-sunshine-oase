@@ -10,7 +10,7 @@
     "posthtml-include": "^1.7.2"
   },
   "scripts": {
-    "start": "parcel src/html/page/index.html --open",
+    "start": "parcel src/html/page/index.html --open --no-cache --no-source-maps",
     "build": "parcel build src/html/page/index.html",
     "clear": "npx remove-node-modules && rm yarn.lock"
   },

@@ -2,18 +2,19 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <title>My First Parcel App</title>
-  <link rel="stylesheet" href="../../style/style.scss">
-  <script src="../../script/index.ts"></script>
+  <include src="html/partial/head.html"></include>
 </head>
 
-<body>
-  <include src="html/partial/header.html"></include>
-  <p>This page will replace the <a href="http://www.iris-sunshine-oase.de" title="iris-sunshine-oase.de">iris-sunshine-oase.de</a> homepage.</p>
+<body class="page-layout">
+  <include src="html/partial/page-header.html"></include>
 
-  <div class="button" tabindex="1">Test</div>
-  <div class="button" tabindex="1">Test</div>
+  <main class="page-content">
+    <p>WORK IN PROGRESS</p>
+    <p>This page will replace the <a href="http://www.iris-sunshine-oase.de" title="iris-sunshine-oase.de">iris-sunshine-oase.de</a> homepage.</p>
+    <include src="html/partial/home.html"></include>
+  </main>
+
+  <include src="html/partial/page-footer.html"></include>
 </body>
 
 </html>

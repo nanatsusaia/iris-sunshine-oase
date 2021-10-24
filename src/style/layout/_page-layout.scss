@@ -1,0 +1,7 @@
+@use '../abstract/color';
+
+.page-layout {
+  position: relative;
+  background: color.$ios-gradient;
+  background-attachment: fixed;
+}

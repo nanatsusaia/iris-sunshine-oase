@@ -1,0 +1,16 @@
+@use '../abstract/color';
+
+.page-header {
+  display: grid;
+  place-items: center;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  height: 3rem;
+  margin-bottom: 2rem;
+  background: color.$white;
+
+  &__logo {
+    font-size: 3vw;
+  }
+}

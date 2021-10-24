@@ -1,0 +1,6 @@
+@use '../abstract/color';
+
+.page-content {
+  background: color.$transparent;
+  padding: 0 1rem;
+}

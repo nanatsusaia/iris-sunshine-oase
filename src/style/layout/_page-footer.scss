@@ -1,0 +1,33 @@
+@use '../abstract/color';
+
+.page-footer {
+  display: grid;
+  grid-template-areas:
+    "fst"
+    "snd"
+    "trd";
+  justify-items: center;
+  align-items: center;
+  height: 5rem;
+  width: 100vw;
+  margin-top: 2rem;
+  background: color.$black;
+  color: color.$white;
+
+  @media (min-width: 900px) {
+    grid-template-areas: "fst snd trd";
+  }
+
+  &__fst {
+    grid-area: fst;
+  }
+
+  &__snd {
+    grid-area: snd;
+  }
+
+  &__trd {
+    grid-area: trd;
+  }
+
+}
