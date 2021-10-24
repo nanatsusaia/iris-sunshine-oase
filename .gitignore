@@ -102,9 +102,3 @@ dist
 
 # TernJS port file
 .tern-port
-
-# parcel builder
-.parcel-cache/
-
-# Yarn
-yarn.lock
