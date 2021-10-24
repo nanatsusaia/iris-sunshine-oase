@@ -1,1 +1,0 @@
-{"mappings":"AAAA,GACI,aAAA,CACA,mBCCJ","sources":["src/style/style.scss","%3Cinput%20css%207mQ-hH%3E"],"sourcesContent":["h1 {\r\n    color: hotpink;\r\n    font-family: cursive;\r\n  }","h1 {\n  color: hotpink;\n  font-family: cursive;\n}\n/*# sourceMappingURL=index.e8092a56.css.map */\n"],"names":[],"version":3,"file":"index.e8092a56.css.map"}
