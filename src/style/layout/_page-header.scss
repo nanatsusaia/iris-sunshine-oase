@@ -5,12 +5,12 @@
   place-items: center;
   position: sticky;
   top: 0;
-  width: 100vw;
+  width: 100%;
   height: 3rem;
   margin-bottom: 2rem;
   background: color.$white;
 
   &__logo {
-    font-size: 3vw;
+    font-size: 2vw;
   }
 }
