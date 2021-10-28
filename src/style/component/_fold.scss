@@ -1,0 +1,109 @@
+@use '../abstract/color';
+
+.fold {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 1fr auto 1fr auto 1fr;
+  width: 100%;
+  height: 100vh;
+
+  &__title {
+    grid-area: title;
+    color: color.$black;
+    background: color.$white;
+  }
+
+  &__text {
+    grid-area: text;
+    color: color.$black;
+    background: color.$white;
+  }
+
+  &__solarium {
+    grid-area: solarium;
+  }
+
+  &__massage {
+    grid-area: massage;
+  }
+
+  &__ton-erde {
+    grid-area: ton-erde;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (min-width: 900px) {
+    grid-template-areas:
+      "empty1 empty2 empty3 solarium solarium"
+      "empty1 title  empty3 solarium solarium"
+      "empty1 empty4 empty3 solarium solarium"
+      "empty1 empty4 empty3 massage  ton-erde"
+      "empty1 text   empty3 massage  ton-erde"
+      "empty1 empty5 empty3 massage  ton-erde";
+    grid-template-columns: minmax(0, 3rem) minmax(40%, 60ch) minmax(0, 3rem) 1fr 1fr;
+    grid-template-rows: minmax(0, 1fr) auto minmax(0, 1fr) 1fr auto 1fr;
+    height: 100vh;
+    gap: 0.5rem;
+  
+    &__title {
+      color: color.$black;
+      background: color.$white;
+    }
+  
+    &__text {
+      color: color.$black;
+      background: color.$white;
+    }
+
+    &__solarium, &__massage, &__ton-erde {
+      position: relative;
+      cursor: pointer;
+      transition: all 150ms ease-in-out;
+
+      &::before {
+        content: '';
+        display: grid;
+        place-items: center;
+        position: absolute;
+        inset: 0;
+        font-size: 200%;
+        font-weight: bold;
+        color: transparent;
+        transition: all 150ms ease-in-out;
+      }
+
+      &:hover {
+        transform: scale(1.03);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        z-index: 1;
+
+        &::before {
+          color: white;
+          text-shadow: 0 0 2px #000;
+        }
+
+        .fold__img {
+          border-radius: 0.25rem;
+        }
+      }
+    }
+
+    &__solarium::before {
+      content: 'Goto Solarium';
+    }
+
+    &__massage::before {
+      content: 'Goto Massage';
+    }
+
+    &__ton-erde::before {
+      content: 'Goto Ton Erde';
+    }
+  }
+}

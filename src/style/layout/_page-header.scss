@@ -2,15 +2,21 @@
 
 .page-header {
   display: grid;
-  place-items: center;
-  position: sticky;
+  place-items: left;
+  position: fixed;
   top: 0;
   width: 100%;
   height: 3rem;
-  margin-bottom: 2rem;
-  background: color.$white;
+  background: color.$transparent;
+  z-index: 2;
 
   &__logo {
     font-size: 2vw;
+    background: color.$white;
+    width: max-content;
   }
+}
+
+*:target {
+  margin-top: 5rem;
 }
